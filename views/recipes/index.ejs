@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/58425edaa6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Recipe Web App</title>
+</head>
+<body>
+    <header>
+        <div class="hammb">
+            <nav role="navigation">
+                <div id="menuToggle">
+                  <input type="checkbox" />
+                  
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              
+                  <ul id="menu">                   
+                    <a href="/"><li><i class="fas fa-home"></i> Home</li></a> 
+                    <a href="/"><li><i class="fas fa-pepper-hot"></i> All Recipes</li></a> 
+                    <a href="/recipes/create"><li><i class="fas fa-folder-plus"></i> Add Recipe</li></a> 
+                    <a href="/recipes/info"><li><i class="far fa-question-circle"></i> Info</li></a> 
+                  </ul>
+                </div>
+              </nav> 
+        </div>
+        <a href="/recipes/create"><button class="shrink"><i class="fas fa-folder-plus"></i>   Add Recipe</button></a>
+             <h2 id="headerText">My Recipes</h2>
+      </header>
+    
+
+
+    <% recipes.forEach(recipe => { %>
+        <div id="mainstuff">
+         <div id="featured">
+            <ul class="style1">
+                <li class="first">
+                   <h3> <%= recipe.recipe_name%></h3>
+                   <div class="muted-author">
+                     Submitted By: <%= recipe.author_name%> 
+                  </div>
+                  <p><a href="recipes/<%= recipe.id %>"> <%= recipe.steps%> </a></p>
+                   <a href="/recipes/edit/<%= recipe.id %>"><button class="main-btns">EDIT</button></a>
+                    <form action="/recipes/<%= recipe.id %>?_method=DELETE" method="POST" >
+                      <button class="main-btns">DELETE</button>
+                    </form> 
+                </li> 
+            </ul>
+         </div>
+        </div>
+  <%  })%>
+</body> 
+</html>

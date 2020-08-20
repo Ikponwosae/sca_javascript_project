@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/form-style.css">
+    <title>Create Recipe</title>
+</head>
+<body>
+  <em><a href="indexes.html" class="chyron">&laquo; homepage</a></em>
+
+     <div class="container">
+    <form action="indexes.html" name="recipes-create" method="POST"> 
+        <fieldset>
+            <legend>Author Details</legend>
+            <div class="grid-flows"> 
+            <label for="author_name">Author Name:</label> <input type="text" name="author_name" required class="inputss">
+            <label for="author_email">Author Email:</label> <input type="email" name="author_email" required class="inputss">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Recipe-Info</legend>
+            <div class="grid-flows">
+            <label for="recipe_name">Recipe Name:</label> <input type="text" name="recipe_name" required class="inputss">
+            <label for="ingredients">Ingredients List:</label> <textarea name="ingredients" id="ingredients" cols="80" rows="7" required class="inputss"></textarea>
+            <label for="steps">Preparation Details:</label> <textarea name="steps" cols="80" rows="7" required class="inputss"></textarea>
+            <label for="time">Prep Time:</label> <select id="selmenu" name="time">
+                <option value="30">Less than an hour</option>
+                <option value="1hr">More than an hour</option>
+          </select>
+            </div>
+        </fieldset>
+
+    <input type="submit" id="submit-btn">
+
+    </form>    
+    
+  
+</div>
+<script src="index.js"></script>
+</body>
+</html>

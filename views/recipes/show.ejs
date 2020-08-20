@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <title>Recipe</title>
+</head>
+<body>
+    <header>
+        <div class="hammb">
+            <nav role="navigation">
+                <div id="menuToggle">
+                  <input type="checkbox" />
+                  
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              
+                  <ul id="menu">                    
+                    <a href="/"><li><i class="fas fa-home"></i> Home</li></a>
+                    <a href="#"><li><i class="fas fa-pepper-hot"></i> All Recipes</li></a> 
+                    <a href="/"><li><i class="fas fa-folder-plus"></i> Add Recipe</li></a> 
+                    <a href="#"><li><i class="far fa-question-circle"></i> Info</li></a> 
+                  </ul>
+                </div>
+              </nav> 
+        </div>
+        <a href="/recipes/edit/<%= recipe.id %>"><button class="shrink"><i class="fas fa-folder-plus"></i>   Edit Recipe</button></a>
+             <h2 id="headerText">My Recipes</h2>
+      </header>
+    
+            <div id="featured" class="style1 first">
+              <p class="tops"> <%= recipe.recipe_name %></p>
+              <sub>Prep Time: <%= recipe.p_time %></sub>
+          
+              <div class="muted-author">
+                Created On: <%= recipe.createdAt.toLocaleDateString() %>
+              </div>
+
+              <div id="main-con">
+                <p class="tops"> INGREDIENTS LIST:</p>
+                   <p id="ramb">  <%= recipe.ingredients %> </p><br>
+                <p class="tops">PREP DETAILS:</p>
+                  <p id="bots"><%= recipe.steps %></p>
+              </div>
+            </div>
+
+       <style>
+          #featured{
+            display: block;
+            margin: 0 auto;
+            padding: 0;
+            width: 80%;
+            overflow: hidden;
+            text-align: left;
+           color: darkolivegreen;
+         }
+
+         .tops{
+          /* text-decoration:underline; */
+           font-weight: 300;
+           border-bottom: 2px dotted grey;
+           text-transform: uppercase;
+         }
+          #main-con{
+            display: block;
+            padding: 1.6em 0em 0em 0em;
+         }
+
+         #main-con p{
+           font-size: 25px;
+           display: grid;
+           font-weight: 300;
+         }
+         #ramb{
+          grid-template-columns: 80px;
+          color: black;
+         }
+         #bots{
+           color: black;
+         }
+
+
+    </style>
+</body> 
+</html>

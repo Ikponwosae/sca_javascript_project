@@ -1,0 +1,19 @@
+<fieldset>
+    <legend>Author Details</legend>
+    <div class="grid-flows"> 
+    <label for="author_name">Author Name:</label> <input type="text" name="author_name" value="<%= recipe.author_name%>" required id="author_name" class="inputss">
+    <label for="author_email">Author Email:</label> <input type="email" name="author_email" value="<%= recipe.author_email%>" required id="author_email" class="inputss">
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>Recipe-Info</legend>
+    <div class="grid-flows">
+    <label for="recipe_name">Recipe Name:</label> <input type="text" name="recipe_name" value="<%= recipe.recipe_name%>" required id="recipe_name" class="inputss">
+    <label for="ingredients">Ingredients List:</label> <textarea name="ingredients"  id="ingredients" cols="80" rows="7" required class="inputss"><%= recipe.ingredients %></textarea>
+    <label for="steps">Preparation Details:</label> <textarea name="steps"  cols="80" rows="7" required id="steps" class="inputss"><%= recipe.steps %></textarea>
+    <label for="p_time">Prep Time:</label> <input type="text" name="p_time" value="<%= recipe.p_time %>" required id="p_time" class="inputss">
+    </div>
+</fieldset>
+
+<input type="submit" id="submit-btn">

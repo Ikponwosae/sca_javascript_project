@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/58425edaa6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>recipe apps</title>
+</head>
+<body>
+  <header>
+    <div class="hammb">
+        <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+          
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <a href="#"><li><i class="fas fa-pepper-hot"></i> All Recipes</li></a> 
+                <a href="add-recipe.html"><li><i class="fas fa-folder-plus"></i> Add Recipe</li></a> 
+                <a href="#"><li><i class="far fa-question-circle"></i> Info</li></a> 
+                <a href="#"><li> Contact</li></a> 
+              </ul>
+            </div>
+          </nav> 
+    </div>
+    <a href="add-recipe.html"><button class="shrink"><i class="fas fa-folder-plus"></i>   Add Recipe</button></a>
+         <h2 id="headerText">My Recipes</h2>
+  </header>
+
+  <div id="mainstuff">
+    <div id="featured">
+		
+			<ul class="style1">
+				<li class="first">
+			<!--		<p class="date"><a href="#">Jan<b>05</b></a></p> -->
+					<h3>Amet sed volutpat mauris</h3>
+          <p><a href="#">Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget, tempus et, tellus. Etiam neque. Vivamus consequat lorem at nisl. Nullam non wisi a sem semper eleifend. Etiam non felis. Donec ut ante.</a></p>
+          <button class="main-btns">EDIT</button> <button class="main-btns">DELETE</button> 
+				</li>
+				<li>
+				<!---	<p class="date"><a href="#">Jan<b>03</b></a></p> -->
+					<h3>Sagittis diam dolor amet</h3>
+          <p><a href="#">Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie. Donec leo, vivamus fermentum nibh in augue praesent congue rutrum.</a></p>
+          <button class="main-btns">EDIT</button> <button class="main-btns">DELETE</button> 
+				</li>
+				<li>
+				<!--	<p class="date"><a href="#">Jan<b>01</b></a></p> -->
+					<h3>Amet sed volutpat mauris</h3>
+          <p><a href="#">Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget, tempus et, tellus. Etiam neque. Vivamus consequat lorem at nisl. Nullam non wisi a sem semper eleifend. Etiam non felis. Donec ut ante.</a></p>
+          <button class="main-btns">EDIT</button> <button class="main-btns">DELETE</button> 
+				</li>
+				<li>
+			<!---		<p class="date"><a href="#">Dec<b>31</b></a></p> -->
+					<h3>Sagittis diam dolor amet</h3>
+          <p><a href="#">Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie. Donec leo, vivamus fermentum nibh in augue praesent congue rutrum.</a></p>
+          <button class="main-btns">EDIT</button> <button class="main-btns">DELETE</button> 
+				</li>
+			</ul>
+		</div>
+  </div>
+                            
+</body>
+</html>

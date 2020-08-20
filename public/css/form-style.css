@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: block;
+    background-color: darkolivegreen;
+    color: white;
+    font-size: 1.2rem;
+    font-family:'EB Garamond', serif;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+form{
+   margin-left: 20%;
+   margin-right: 20%;
+   padding-bottom: 40px;
+   margin-top: 30px;
+}
+
+fieldset{
+    border-radius: 16px;
+    margin-bottom: 15px;
+}
+
+legend{
+    border: 1px solid #000000;
+    border-radius: 7px;
+    font-family: 'Satisfy', cursive;
+    margin-left: 20px;
+}
+
+.grid-flows{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    justify-content: center;
+}
+
+label, input, textarea{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+input{
+    width: 250px;
+    background-color: blanchedalmond;
+    border-radius: 4px;
+}
+
+textarea{
+    display: block;
+    resize: none;
+    width: 250px;
+    background-color: blanchedalmond;
+    border-radius: 4px;
+}
+
+#selmenu{
+    width: 250px;
+    padding: 0;
+    height: 40px;
+}
+
+#submit-btn{
+    float: right;
+    padding: 7px;
+    border: 1px solid darkolivegreen;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+    background-color:white;
+    opacity: 0.5;
+}
+
+#submit-btn:hover{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+span.chyron { 
+    font-size: 1.2em; 
+    padding-top: 10px;
+ }
